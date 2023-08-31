@@ -867,7 +867,7 @@ p {
   padding-left: 16px;
   color: var(--white);
   outline: transparent;
-  max-width: 398px;
+  width: 398px;
   height: 40px;
   flex-shrink: 0;
   background-color: transparent;
