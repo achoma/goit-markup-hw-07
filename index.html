@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="webstudio" content="Effective Solutions for Your Business" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
     <link
       rel="stylesheet"
@@ -27,7 +28,16 @@
           <a class="navi-logo" href="./index.html"
             >Web<span class="logo-studio">Studio</span></a
           >
-
+          <button type="button" class="button-hamburger" js-open-menu   aria-expanded="false"
+          aria-controls="mobile-menu">
+            <svg width="32px" height="22px">
+              <use
+                class="hamburger-icon"
+                href="./images/icons.svg#icon-charm_menu-hamburger"
+              />
+            </svg>
+          </button>
+          <div class="backdrop-navi " js-menu-conteiner>
           <ul class="navi-link">
             <li class="current">
               <a class="current current-link" href="index.html"> Studio</a>
@@ -49,13 +59,13 @@
               <a class="link" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
             </li>
           </ul>
-        </div>
+        </div></div>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero-text">Effective Solutions for Your Business</h1>
+          <h1 class="hero-text">Effective Solutions For Your Business</h1>
           <button type="button" class="servis-button" data-modal-open>
             Order Service
           </button>
@@ -428,8 +438,8 @@
     <footer class="footer-class footer-list">
       <div class="container logo-footer">
         <ul>
-          <li class="footer-item">
-            <a class="navi-logo" href="">
+          <li >
+            <a class="navi-logo footer-logo" href="">
               WEB<span class="logo-studio-footer">STUDIO</span>
             </a>
             <p class="footer-text">
@@ -602,5 +612,12 @@
     </div>
 
     <script src="./js/modal.js"></script>
+        <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
