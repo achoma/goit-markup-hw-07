@@ -22,7 +22,6 @@ ul {
 }
 
 html {
-  overflow: auto;
   box-sizing: border-box;
   max-width: 428px;
   margin: auto;
@@ -64,6 +63,7 @@ section {
   max-width: 428px;
   margin: 0 auto;
   padding: 0 15px;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .container {
