@@ -72,7 +72,13 @@ body {
   font-size: 16px;
 }
 /* NAGŁÓWEK */
-
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--cornflower, #e7e9fc);
+}
 .navi-logo {
   margin-right: 76px;
   font-family: "Raleway", sans-serif;
@@ -88,40 +94,6 @@ body {
 .logo-studio {
   color: var(--navy-blue, #2e2f42);
 }
-.backdrop-navi {
-  position: fixed;
-  inset: 0;
-  translate: -100% 0 0;
-  transition: translate 400ms;
-  background-color: var(--white);
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-}
-.backdrop-navi.is-open {
-  translate: none;
-}
-.close-navi {
-  position: absolute;
-  inset: 1em 1em auto auto;
-}
-/*
-
-
-.button-hamburger {
-  background-color: transparent;
-}
-.hamburger-icon {
-  fill: black;
-}
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0;
-  border-bottom: 1px solid var(--cornflower, #e7e9fc);
-}
-
 .link,
 .current,
 .current-portfolio {
@@ -230,8 +202,7 @@ body {
   color: var(--ocean, #404bbf);
   transition: color var(--transition), background-color var(--transition),
     box-shadow var(--transition);
-}*/
-
+}
 /* SEKCJA GŁÓWNA */
 
 .hero-text {
