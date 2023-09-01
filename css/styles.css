@@ -720,17 +720,12 @@ p {
 
 .customers-icons {
   fill: #8e8f99;
-  max-width: 190px;
+  max-width: 168px;
   height: 88px;
   flex-shrink: 0;
   padding: 16px 32px;
   border-radius: 4px;
   border: 1px solid var(--lightslate, #8e8f99);
-}
-@media screen and (min-width: 768px) {
-  .customers-icons {
-    width: 168px;
-  }
 }
 
 .customers-icons:focus,
