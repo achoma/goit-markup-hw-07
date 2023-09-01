@@ -28,7 +28,15 @@
           <a class="navi-logo" href="./index.html"
             >Web<span class="logo-studio">Studio</span></a
           >
-
+<button 
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        
+        >
+      <svg class="hamburger-icon">
+        <use href="./images/icons.svg#icon-charm_menu-hamburger">  </use>
+      </svg></button>
           <ul class="navi-link">
             <li class="current">
               <a class="current current-link" href="index.html"> Studio</a>
@@ -39,6 +47,7 @@
             <li><a class="link" href="">Contacts</a></li>
           </ul>
         </nav>
+        
         <div class="contacts">
           <ul class="contacts-links">
             <li>
@@ -609,6 +618,77 @@
       </div>
     </div>
 
+<div class="menu-container js-menu-container" id="mobile-menu">
+<button class="mobile-close menu-toggle js-close-menu">
+<svg width="8px" height="8px">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+</button><div class="mobile-menu">
+<ul class="menu-mobile ">
+  <li><a class="link" href="index.html">Studio</a></li>
+   <li><a class="link" href="portfolio.html">Portfolio</a></li>
+    <li><a class="link" href="#">Contacts</a></li>
+</ul>
+<ul > <li>
+              <a class="link tel-link" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
+            </li>
+            <li>
+              <a class="link mail-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+           
+          </ul><ul class="sm-mobile">
+                <li>
+                  <div class="sm-icons">
+                    <a href="#">
+                      <svg class="sm-icons-item">
+                        <use href="./images/icons.svg#icon-instagram-2-1"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="sm-icons">
+                    <a href="#">
+                      <svg class="sm-icons-item">
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="sm-icons">
+                    <a href="#">
+                      <svg class="sm-icons-item">
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="sm-icons">
+                    <a href="#">
+                      <svg class="sm-icons-item">
+                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+</div>
+</div>
+
+
+
+
+
+
+
+
     <script src="./js/modal.js"></script>
     <script
       defer
@@ -616,6 +696,6 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
