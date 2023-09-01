@@ -931,15 +931,23 @@ p {
 /* ------------- dla desktopu -------------
 
 
-/*------------- portfolio - sekcja nawigacji---------------
+/* PORTFOLIO - NAWIGACJA */
 .navi-button {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: left;
   align-items: flex-start;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 16px;
   padding-top: 96px;
   padding-bottom: 72px;
-}
+} 
+@media screen and (min-width: 768px){.navi-button{
+  justify-content: center;
+}}
+
+
+
 .navi-button button {
   display: flex;
   padding: 12px 24px;
@@ -968,17 +976,23 @@ p {
 .navi-button:hover {
   cursor: pointer;
 }
-/* --------------portfolio - projekty --------------
+/* PORTFOLIO - PROJEKTY */
 
 .project-box {
   display: flex;
   justify-content: center;
-  flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 24px;
+  flex-direction: row;
+    flex-shrink: 0;
+
   row-gap: 48px;
-  margin-bottom: 120px;
+  column-gap: 24px;
+  margin-bottom: 48px;
 }
+@media screen and (min-width: 768px){.project-box{
+  margin-bottom: 96px;}}
+@media screen and (min-width: 1200px){.project-box{
+  margin-bottom: 120px;}}
 .project {
   transition-property: box-shadow;
   transition-duration: 250ms;
