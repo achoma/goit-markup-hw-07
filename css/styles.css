@@ -79,6 +79,7 @@ body {
   margin-bottom: 0;
   border-bottom: 1px solid var(--cornflower, #e7e9fc);
 }
+
 .navi-logo {
   margin-right: 76px;
   font-family: "Raleway", sans-serif;
@@ -106,13 +107,41 @@ body {
   position: relative;
   display: block;
 }
-
+.link-header {
+  text-decoration: none;
+  color: var(--navy-blue);
+  letter-spacing: 0.02em;
+  transition-property: color;
+}
 .contacts-links {
   display: flex;
   justify-content: flex-end;
   gap: 40px;
   font-style: normal;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+.contacts {
+  color: var(--slate);
+  font-weight: 400;
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    font-size: 12px;
+  }
+}
+
 .navi-link {
   display: flex;
   padding: 24px 0;
@@ -121,9 +150,15 @@ body {
   line-height: 1.5;
   margin-bottom: -2px;
 }
+@media screen and (max-width: 768px) {
+  .navi-link {
+    display: none;
+  }
+}
 .current {
   position: relative;
 }
+
 .current ::after {
   display: block;
   position: absolute;
@@ -157,11 +192,7 @@ body {
   align-items: center;
   gap: 40px;
 }
-.contacts {
-  color: var(--slate);
-  font-weight: 400;
-  display: block;
-}
+
 .contacts:hover,
 .contacts:focus {
   color: var(--ocean);
@@ -202,6 +233,25 @@ body {
   color: var(--ocean, #404bbf);
   transition: color var(--transition), background-color var(--transition),
     box-shadow var(--transition);
+}
+.menu-toggle {
+  display: flex;
+  margin-right: 8px;
+  background: none;
+}
+@media screen and (min-width: 768) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.hamburger-icon {
+  max-width: 32px;
+  max-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  stroke: var(--navy-blue);
+  stroke: 2px;
 }
 /* MENU MOBILNE */
 
@@ -281,7 +331,9 @@ body {
   color: var(--NAVY-BLUE, #2e2f42);
   padding-bottom: 40px;
 }
-
+.menu-mobile .active-link {
+  color: var(--ocean);
+}
 .tel-link {
   display: block;
   font-size: 36px;
