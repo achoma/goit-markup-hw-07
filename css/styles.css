@@ -190,9 +190,15 @@ body {
 .navi {
   display: flex;
   align-items: center;
-  gap: 40px;
+  margin-right: auto;
 }
 
+@media screen and (max-width: 768px) {
+  .navi {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
 .contacts:hover,
 .contacts:focus {
   color: var(--ocean);
@@ -244,6 +250,7 @@ body {
     display: none;
   }
 }
+
 .hamburger-icon {
   max-width: 32px;
   max-height: 32px;
